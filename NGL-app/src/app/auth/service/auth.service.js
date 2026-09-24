@@ -33,7 +33,7 @@ export async function register(userData)  {
    await sendEmail(
         userData.email,
         'verification code',
-        `<h1>Your verification code is ${otp} </h1>`
+        `<h1>Your verification code is ${code} </h1>`
     );
     return createdUser;}
 
